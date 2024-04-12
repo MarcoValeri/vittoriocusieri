@@ -19,15 +19,10 @@
         </div>
         <nav id="header-nav" class="nav">
             <ul class="nav__menu">
-                <li class="nav__menu-item"><a class="link p__xl" href="{{ path('app_home') }}">Home</a></li>
-                <li class="nav__menu-item"><a class="link p__xl" href="{{ path('app_statue', {pageNumber: '0'}) }}">Negozio</a></li>
-                <li class="nav__menu-item"><a class="link p__xl" href="{{ path('app_about') }}">Chi Sono</a></li>
-                <li class="nav__menu-item"><a class="link p__xl" href="{{ path('app_contact') }}">Contatti</a></li>
-                {% if is_granted('ROLE_ADMIN') %}
-                    <li class="nav__menu-item">
-                        <a class="link p__xl" href="{{ path('app_admin') }}">Admin</a>
-                    </li>
-                {% endif %}
+                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>">Home</a></li>
+                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/negozio">Negozio</a></li>
+                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/chi-sono">Chi Sono</a></li>
+                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/contatti">Contatti</a></li>
             </ul>
         </nav>
     </div>

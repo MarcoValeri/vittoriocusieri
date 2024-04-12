@@ -1,0 +1,497 @@
+/**
+* Create a mixin that works for
+* media queries in the following breakpoints:
+*           xs
+*           sm
+*           m
+*           l
+*           xl
+*           xxl
+*
+* This project follow the logic of responsive-design
+*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+/**
+* Google Font
+* Name: Playfair Display
+* font-family: 'Playfair Display', serif;
+*/
+.button {
+  cursor: pointer;
+}
+.button__red {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: #800000;
+  padding: 2rem;
+  border-radius: 0 25px 0 25px;
+}
+
+.input-text {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.input-error {
+  color: #d00;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+.link__no-style {
+  color: #fff;
+  text-decoration: none;
+}
+.link__no-style:hover {
+  text-decoration: none;
+}
+.link__red {
+  color: #800000;
+  text-decoration: underline;
+  text-decoration-color: #800000;
+}
+
+.logo {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.heart {
+  font-size: 3rem;
+  color: #000;
+}
+
+.h1 {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .h1 {
+    font-size: 4rem;
+  }
+}
+
+.h2 {
+  font-size: 4rem;
+}
+
+.h3 {
+  font-size: 3rem;
+}
+
+.h4 {
+  font-size: 2.5rem;
+}
+
+.p {
+  font-size: 1.6rem;
+}
+.p__xl {
+  font-size: 2.2rem;
+}
+.p__l {
+  font-size: 2rem;
+}
+
+.statua-card {
+  width: 50rem;
+  overflow: hidden;
+  margin: 0 2rem 5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #800000;
+}
+.statua-card__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.statua-card__container-image {
+  width: 100%;
+  height: 30rem;
+}
+.statua-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.statua-card__container-title {
+  padding: 2rem 2rem 0 2rem;
+}
+.statua-card__container-description {
+  padding: 2rem 2rem 0 2rem;
+}
+.statua-card__container-quantity {
+  padding: 2rem 2rem 0 2rem;
+}
+.statua-card__container-price {
+  padding: 2rem 2rem 0 2rem;
+}
+.statua-card__menu-price {
+  list-style-type: none;
+}
+.statua-card__container-btn {
+  padding: 4rem 2rem 4rem 2rem;
+}
+
+.footer {
+  height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 3rem;
+  background-color: #800000;
+}
+.footer__container-credits {
+  padding: 0 1rem;
+  text-align: center;
+}
+.footer__credits {
+  color: #fff;
+}
+
+.header {
+  padding: 2rem 0;
+  background-color: #800000;
+}
+.header__container-menu-icon {
+  display: none;
+  width: 5rem;
+  height: 3rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .header__container-menu-icon {
+    display: block;
+    position: relative;
+    padding-left: 1rem;
+  }
+}
+.header__icon-line {
+  display: block;
+  width: 1.5rem;
+  padding: 0.2rem 1rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.header__icon-line-one {
+  position: absolute;
+  top: 0;
+}
+.header__icon-line-one--open {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.header__icon-line-two {
+  position: absolute;
+  top: 30%;
+}
+.header__icon-line-two--open {
+  display: none;
+}
+.header__icon-line-three {
+  position: absolute;
+  top: 60%;
+}
+.header__icon-line-three--open {
+  top: 50%;
+  transform: rotate(135deg);
+}
+.header__container-logo {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.nav {
+  text-align: center;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    position: relative;
+  }
+}
+.nav__active {
+  display: block;
+}
+.nav__menu {
+  list-style: none;
+}
+@media only screen and (max-width: 768px) {
+  .nav__menu {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: #800000;
+  }
+}
+.nav__menu-item {
+  display: inline-block;
+  padding: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .nav__menu-item {
+    display: block;
+  }
+}
+
+.about {
+  width: 60%;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .about {
+    width: 90%;
+  }
+}
+.about__title {
+  margin-bottom: 2rem;
+}
+.about__p {
+  margin-bottom: 2rem;
+}
+
+.contact {
+  width: 60%;
+  height: auto;
+  min-height: 50vh;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .contact {
+    width: 90%;
+  }
+}
+.contact__title {
+  margin-bottom: 2rem;
+}
+.contact__p {
+  margin-bottom: 2rem;
+}
+.contact__list {
+  margin-left: 2.5rem;
+}
+
+.home__container-carousel {
+  position: relative;
+  height: 50vh;
+  background-color: #800000;
+}
+@media only screen and (max-width: 768px) {
+  .home__container-carousel {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home__container-carousel {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home__container-carousel {
+    height: 100vh;
+  }
+}
+.home__carousel-slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.home__carousel-slide--no-active {
+  left: -100%;
+  opacity: 0;
+}
+.home__slide-wrapper {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 768px) {
+  .home__slide-wrapper {
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .home__slide-wrapper {
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .home__slide-wrapper {
+    height: 100vh;
+  }
+}
+.home__container-slide-title {
+  padding: 2rem 5rem;
+}
+.home__container-slide-button {
+  padding: 2rem 5rem;
+}
+.home__slide-title {
+  color: #fff;
+}
+.home__slide-one-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), var(--home-background-one);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home__slide-two-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), var(--home-background-two);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home__slide-three-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), var(--home-background-three);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home__container-negozio {
+  width: 60%;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .home__container-negozio {
+    width: 90%;
+  }
+}
+.home__container-button {
+  margin: 5rem auto;
+}
+.home__container-about {
+  width: 60%;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .home__container-about {
+    width: 90%;
+  }
+}
+
+.statua {
+  padding: 0 5rem;
+  margin: 5rem 0;
+}
+.statua__container-title {
+  text-align: center;
+}
+.statua__container-description {
+  width: 60%;
+  font-size: 2rem;
+  margin: auto;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-description {
+    width: 100%;
+  }
+}
+.statua__container-materials {
+  width: 60%;
+  font-size: 2rem;
+  margin: 0 auto 2rem auto;
+}
+.statua__container-materials ul, .statua__container-materials ol {
+  margin-left: 2.5rem;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-materials {
+    width: 100%;
+  }
+}
+.statua__container-price {
+  width: 60%;
+  margin: 0 auto 2rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-price {
+    width: 100%;
+  }
+}
+.statua__container-sell {
+  width: 60%;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-sell {
+    width: 100%;
+  }
+}
+.statua__container-sell-buttons {
+  margin: 5rem auto;
+}
+.statua__container-images {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.statua__container-image {
+  width: 30%;
+  height: 30%;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-image {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .statua__container-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+.statua__image {
+  width: 100%;
+  height: 100%;
+}
+.statua__container-shop {
+  width: 60%;
+  text-align: center;
+  margin: 5rem auto;
+}
+@media only screen and (max-width: 1200px) {
+  .statua__container-shop {
+    width: 100%;
+  }
+}
+
+.statues {
+  padding: 10rem 0;
+}
+.statues__container-products {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=main.css.map */

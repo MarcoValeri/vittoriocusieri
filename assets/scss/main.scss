@@ -1,0 +1,23 @@
+// Import abstract files
+@import "./abstract/mixins";
+@import "./abstract/variables";
+
+// Import base files
+@import "./base/base";
+@import "./base/font";
+@import "./base/typography";
+
+// Import component files
+@import "./components/statua-card";
+
+// Import layout files
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/nav";
+
+// Import page files
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/home";
+@import "./pages/statua";
+@import "./pages/statue";

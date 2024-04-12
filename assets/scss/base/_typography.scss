@@ -1,0 +1,95 @@
+// Button
+.button {
+    cursor: pointer;
+
+    &__red {
+        font-size: 2rem;
+        color: $white;
+        text-decoration: none;
+        background-color: $red;
+        padding: 2rem;
+        border-radius: 0 25px 0 25px;
+    }
+}
+
+// Inputs
+.input-text {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.input-error {
+    color: $redError;
+}
+
+// Links
+.link {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $white;
+    }
+
+    &__no-style {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    &__red {
+        color: $red;
+        text-decoration: underline;
+        text-decoration-color: $red;
+    }
+}
+
+// Logos
+.logo {
+    font-size: 5rem;
+    color: $white;
+}
+
+.heart {
+    font-size: 3rem;
+    color: $black;
+}
+
+// Tags Font Size
+.h1 {
+    font-size: 5rem;
+
+    @include respond('md') {
+        font-size: 4rem;
+    }
+
+}
+
+.h2 {
+    font-size: 4rem;
+}
+
+.h3 {
+    font-size: 3rem;
+}
+
+.h4 {
+    font-size: 2.5rem;
+}
+
+.p {
+    font-size: 1.6rem;
+
+    &__xl {
+        font-size: 2.2rem;
+    }
+
+    &__l {
+        font-size: 2rem;
+    }
+}
