@@ -23,7 +23,7 @@ function create_post_type() {
     register_post_type('Statua', [
         'labels' => [
             'name' => __('Statue'),
-            'singular_name' => __('Statue')
+            'singular_name' => __('Statua')
         ],
         'public' => true,
         'has_archive' => true,

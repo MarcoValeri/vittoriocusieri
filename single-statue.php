@@ -1,24 +1,24 @@
-{% extends "base.html.twig" %}
+<?php get_header(); ?>
+<?php
+if (have_posts()) {
+    while (have_posts()) {
+        the_post();
 
-{# Set Statua's variable #}
-{% if statua %}
-    {% set statuaNome = statua.nome %}
-    {% set statuaUrl = statua.url %}
-    {% set statuaDescrizione = statua.descrizione %}
-    {% set statuaMateriali = statua.materiali %}
-    {% set statuaQuantita = statua.quantita %}
-    {% set statuaPrezzo = statua.prezzo %}
-    {% set statuaSpedizione = statua.spedizione %}
-    {% set statuaImages = statua.getImages %}
-{% endif %}
-
-{% block body %}
+        $postID = get_the_ID();
+        $postTitle = get_the_title();
+        $postDate = get_the_date('d-m-Y');
+        $postUpdateDate = get_the_modified_date('d-m-Y');
+        $postCommentsNum = get_comments_number();
+        $postContent = get_the_content();
+    }
+}
+?>
 <div class="statua">
     <div class="statua__container-title">
-        <h1 class="h1">{{ statuaNome }}</h1>
+        <h1 class="h1"><?= $postTitle; ?></h1>
     </div>
     <div class="statua__container-description">
-        {{ statuaDescrizione|raw }}
+        <?= $postContent; ?>
     </div>
     <div class="statua__container-materials">
         <h3 class="h3">Materiali utilizzati</h3>
@@ -51,4 +51,4 @@
         <a class="button__red" href="{{ path('app_statue', {pageNumber: '0'}) }}">Torna al Negozio</a>
     </div>
 </div>
-{% endblock %}
+<?php get_footer(); ?>
