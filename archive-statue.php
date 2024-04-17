@@ -1,3 +1,4 @@
+<h1>archive-statue.php</h1>
 <div class="statues">
     <div class="statues__container-products">
         <?php
@@ -23,7 +24,7 @@
                         <div class="statua-card__container-description">
                             <p class="p__xl"><?= $postExcerptNoHTML; ?>...</p>
                         </div>
-                        <div class="statua-card__container-quantity">
+                        <!-- <div class="statua-card__container-quantity">
                             <p class="p__l">Pezzi disponibili: {{ quantity }}</p>
                         </div>
                         <div class="statua-card__container-price">
@@ -32,7 +33,7 @@
                                 <li><p class="p">Spedizione: €{{ shipping }}</p></li>
                                 <li><p class="p">Totale: €{{ price + shipping }}</p></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="statua-card__container-btn">
                             <a class="button__red" href="<?= $postUrl; ?>">Scopri di più</a>
                         </div>

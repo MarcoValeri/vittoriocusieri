@@ -20,7 +20,7 @@
         <nav id="header-nav" class="nav">
             <ul class="nav__menu">
                 <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>">Home</a></li>
-                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/negozio">Negozio</a></li>
+                <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/statue/">Negozio</a></li>
                 <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/chi-sono">Chi Sono</a></li>
                 <li class="nav__menu-item"><a class="link p__xl" href="<?= get_site_url(); ?>/contatti">Contatti</a></li>
             </ul>

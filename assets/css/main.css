@@ -255,41 +255,20 @@ body {
   }
 }
 
-.about {
+.page {
   width: 60%;
   margin: 5rem auto;
 }
 @media only screen and (max-width: 1200px) {
-  .about {
+  .page {
     width: 90%;
   }
 }
-.about__title {
+.page__title {
   margin-bottom: 2rem;
 }
-.about__p {
+.page__p {
   margin-bottom: 2rem;
-}
-
-.contact {
-  width: 60%;
-  height: auto;
-  min-height: 50vh;
-  margin: 5rem auto;
-}
-@media only screen and (max-width: 1200px) {
-  .contact {
-    width: 90%;
-  }
-}
-.contact__title {
-  margin-bottom: 2rem;
-}
-.contact__p {
-  margin-bottom: 2rem;
-}
-.contact__list {
-  margin-left: 2.5rem;
 }
 
 .home__container-carousel {

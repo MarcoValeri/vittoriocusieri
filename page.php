@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<h1>single.php</h1>
+<h1>page.php</h1>
 <div class="page">
     <?php 
     if (have_posts()) {
