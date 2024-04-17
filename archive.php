@@ -1,4 +1,3 @@
-<h1>archive.php</h1>
 <div class="statues">
     <div class="statues__container-products">
         <?php
