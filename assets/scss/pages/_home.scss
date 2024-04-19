@@ -92,25 +92,33 @@
         background-repeat: no-repeat;
     }
 
-    &__container-negozio {
-        width: 60%;
-        margin: 5rem auto;
-
-        @include respond("xl") {
-            width: 90%;
-        }
-    }
-
     &__container-button {
+        text-align: center;
         margin: 5rem auto;
     }
 
-    &__container-about {
+    &__container {
         width: 60%;
-        margin: 5rem auto;
+        padding-top: 3rem;
+        margin: 10rem auto;
+        border-top: 5px solid $red;
 
         @include respond("xl") {
             width: 90%;
         }
+    }
+
+    &__container-negozio {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 5rem auto;
+    }
+
+    &__container-blog {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem auto;
     }
 }

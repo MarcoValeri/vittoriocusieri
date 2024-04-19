@@ -1,0 +1,18 @@
+.blog {
+    padding: 0 5rem;
+    margin: 5rem 0;
+
+    &__container-title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__title {
+        font-size: 5rem;
+    }
+
+    &__container-articles {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

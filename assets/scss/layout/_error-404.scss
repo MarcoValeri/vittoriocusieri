@@ -1,0 +1,17 @@
+.error-404 {
+    padding: 5rem 1rem;
+
+    &__container-title {
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__container-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 10rem 0;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}

@@ -8,14 +8,17 @@
 @import "./base/typography";
 
 // Import component files
+@import "./components/blog-card";
 @import "./components/statua-card";
 
 // Import layout files
+@import "./layout/error-404";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/nav";
 
 // Import page files
+@import "./pages/blog";
 @import "./pages/page";
 @import "./pages/home";
 @import "./pages/statua";
