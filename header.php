@@ -15,7 +15,7 @@
             <span id="header-menu-icon-three" class="header__icon-line header__icon-line-three"></span>
         </div>
         <div class="header__container-logo">
-            <h1 class="logo">Arti Presepi Vittorio</h1>
+            <h1 class="logo">Vittorio Cusieri</h1>
         </div>
         <nav id="header-nav" class="nav">
             <ul class="nav__menu">

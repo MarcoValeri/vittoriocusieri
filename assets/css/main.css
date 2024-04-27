@@ -72,6 +72,11 @@ body {
   text-decoration-color: #800000;
 }
 
+.link-no-style {
+  text-decoration: none;
+  color: #000;
+}
+
 .logo {
   font-size: 5rem;
   color: #fff;
@@ -158,14 +163,17 @@ body {
 
 .statua-card {
   width: 50rem;
+  height: 100%;
   overflow: hidden;
   margin: 0 2rem 5rem 2rem;
   border-radius: 8px;
   border: 1px solid #800000;
 }
 .statua-card__wrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .statua-card__container-image {
   width: 100%;
@@ -463,11 +471,17 @@ body {
   }
 }
 .home__container-negozio {
+  height: 65rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
   margin: 5rem auto;
+}
+@media only screen and (max-width: 992px) {
+  .home__container-negozio {
+    height: auto;
+    flex-direction: column;
+  }
 }
 .home__container-blog {
   display: flex;
@@ -596,10 +610,16 @@ body {
   padding: 10rem 0;
 }
 .statues__container-products {
+  height: 65rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+}
+@media only screen and (max-width: 992px) {
+  .statues__container-products {
+    height: auto;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

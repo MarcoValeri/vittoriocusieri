@@ -1,13 +1,16 @@
 .statua-card {
     width: 50rem;
+    height: 100%;
     overflow: hidden;
     margin: 0 2rem 5rem 2rem;
     border-radius: 8px;
     border: 1px solid $red;
 
     &__wrapper {
+        height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     &__container-image {

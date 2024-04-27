@@ -26,7 +26,7 @@
             $lastPostExcerp = substr($lastPostContent, 0, 200);
             $lastPostExcerpNoHTML = strip_tags($lastPostExcerp);
             ?>
-            <a class="blog-card" href="<?= $lastPostLink; ?>">
+            <a class="blog-card link-no-style" href="<?= $lastPostLink; ?>">
                 <div class="blog-card__container">
                     <div class="blog-card__container-image">
                         <img class="blog-card__image" src="<?= $lastPostImageUrl; ?>" alt="<?= $lastPostImageAlt; ?>">
