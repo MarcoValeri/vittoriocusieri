@@ -169,6 +169,17 @@ body {
   border-radius: 8px;
   border: 1px solid #800000;
 }
+@media only screen and (max-width: 768px) {
+  .statua-card {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .statua-card {
+    width: auto;
+    max-width: 90%;
+  }
+}
 .statua-card__wrapper {
   height: 100%;
   display: flex;

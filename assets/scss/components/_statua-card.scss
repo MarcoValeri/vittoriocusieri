@@ -6,6 +6,15 @@
     border-radius: 8px;
     border: 1px solid $red;
 
+    @include respond("md") {
+        width: 40rem;
+    }
+
+    @include respond("sm") {
+        width: auto;
+        max-width: 90%;
+    }
+
     &__wrapper {
         height: 100%;
         display: flex;

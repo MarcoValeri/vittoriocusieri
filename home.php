@@ -65,6 +65,7 @@
                 $lastStatuaImageUrl = get_the_post_thumbnail_url();
                 $lastStatuaImageAlt = get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true);
                 $lastStatuaTitle = get_the_title();
+                $lastStatuaTitleExcerpt = substr($lastStatuaTitle, 0, 25);
                 $lastStatuaContent = get_the_content();
                 $lastStatuaExcerp = substr($lastStatuaContent, 0, 200);
                 $lastStatuaExcerpNoHTML = strip_tags($lastStatuaExcerp);
@@ -75,7 +76,7 @@
                             <img class="statua-card__image" src="<?= $lastStatuaImageUrl; ?>" alt="<?= $lastStatuaImageAlt; ?>" />
                         </div>
                         <div class="statua-card__container-title">
-                            <h2 class="h2"><?= $lastStatuaTitle; ?></h2>
+                            <h2 class="h2"><?= strlen($lastStatuaTitleExcerpt) > 40 ? $lastStatuaTitleExcerpt . "..." : $lastStatuaTitleExcerpt; ?></h2>
                         </div>
                         <div class="statua-card__container-description">
                             <p class="p__xl"><?= $lastStatuaExcerpNoHTML; ?>...</p>
